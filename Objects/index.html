@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="clicked()">click me</button>
+    <div id="result"></div>
+    <script>
+        var item = {
+            itemName : 'Shoe',
+            price : 3000,
+            color : 'peru',
+
+            action() {
+                console.log(`The item is ${item.itemName}, the price is ${item.price} and the color is ${item.color}`);
+                result.innerHTML += `<p>The item is ${item.itemName}, the price is ${item.price} and the color is ${item.color}</p>`
+            }
+        }
+        console.log(item['price']);
+        function clicked() {
+            item.action()
+        }
+        // console.log(item.itemName);
+        // console.log(item.price);
+        // console.log(item.color);
+
+    </script>
+    <!-- Objects are in key value pairs -->
+    <!-- We have bracket notation and dot notation -->
+</body>
+</html>

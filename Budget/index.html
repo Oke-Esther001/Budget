@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="con">
+        <div id="result"></div>
+    <input type="text" name="text" class="input" placeholder="Enter your item" id="item">
+    <input type="number" name="number" class="input" placeholder="Enter quantity" id="quantity">
+    <input type="number" name="number" class="input" placeholder="Enter price" id="price">
+        <button id="case" onclick="cart()">Add to cart</button>
+    </div>
+
+        <div class="img-con"></div>
+        <img src="" alt="">
+
+
+    <script>
+        function cart() {
+            var pls = item.value
+            var plax = quantity.value
+            var sale = price.value
+
+            var showobj={  pls, plax, sale }
+
+            if(pls == "" && plax=="" && sale==""){
+            result.innerHTML=`<p>I am not yet filled</p>`
+            }else{
+                var budgetarray= JSON.parse(localStorage.getItem("budget"))|| [];
+
+            budgetarray.push(showobj)
+            
+            localStorage.setItem("budget", JSON.stringify(budgetarray))
+            window.location.href="result.html";
+            }
+        }
+    </script>
+</body>
+</html>

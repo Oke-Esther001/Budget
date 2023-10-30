@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="show"></div>
+
+    <script>
+        for(i=0; i<=100; i++) {
+            if(i%3==0 && i%5==0) {
+                console.log `${i} is FizzBuzz`;
+                show.innerHTML += `${i} is FizzBuzz`
+            } else if(i%3==0) {
+                console.log `${i} is Fizz`;
+                show.innerHTML += `<h5 style="color:brown;">${i} is Fizz</h5>`
+            } else if(i%5==0) {
+                console.log `${i} is Buzz`
+                show.innerHTML += `<h5 style="color:green;">${i} is Buzz</h5>`
+            } else {
+                console.log(`${i} is not recognised`);
+                show.innerHTML += `<h5 style="color:blue;">${i} is not recognised</h5>`
+            }
+        }
+    </script>
+</body>
+</html>

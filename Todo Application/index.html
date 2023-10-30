@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="whole-container">
+        <div>
+            <h1 class="Todo">Todo Application</h1>
+            <div id="showErr"></div>
+            <div>
+                <input type="text" id="items"placeholder="Enter your item"><br>
+            </div>
+            <div>
+                <button class="butt" onclick="addItem()">Add to cart</button>
+            </div>
+        </div>
+        <div class="bot">
+                <button onclick="Addstart()" class="start">Add to start</button>
+                <button onclick="Delfirst()" class="start">Delete first</button>
+                <button onclick="deletelast()" class="start">Delete last</button>
+                <button onclick="dela()" class="start">Delete any</button>
+                <button onclick="eda()" class="start">Edit any</button>
+                <button onclick="delal()" class="start">Delete all</button>
+        </div>
+            <div id="display"></div>
+
+    </div>
+
+    <script>
+var allItems = []
+        function addItem() {
+            var item = document.getElementById("items").value
+            if(item=="") {
+            showErr.innerHTML = `<p>I am not filled yet </p>`
+            }else {
+            showErr.innerHTML = ""
+            allItems.push(item)
+            items.value = ""
+            console.log(allItems);
+
+
+            result()
+        }
+    }
+    function result() {
+                    display.innerHTML = ""
+                    for (i=0; i < allItems.length; i++) {
+                        Element = allItems[i]
+                        display.innerHTML += `<p>${i+1} ${Element}</p>`
+                    }
+    }
+    function deletelast() {
+                allItems.pop()
+                result()
+            }
+
+            function Addstart() {
+                var newItem = prompt("Enter your new todo")
+            allItems.unshift(newItem)
+            result()
+        }
+
+        function Delfirst() {
+            // var newItem = prompt("Enter your new todo")
+            allItems.shift()
+            result()
+        }
+
+        function dela() {
+            var newItem = prompt("Enter your new todo")
+            allItems.splice(newItem -1,1)
+            result()
+        }
+
+
+        function eda() {
+            var newItem = Number(prompt("Enter your number"))
+            var  newgoods = prompt("what do you want to edit")
+            allItems[newItem -1] = newgoods
+            result()
+        }
+
+        function delal() {
+            // var newItem = prompt("Enter your new todo")
+            allItems.splice(0)
+            result()
+        }
+    </script>
+</body>
+</html>

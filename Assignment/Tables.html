@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="Tables.css">
+</head>
+<body>
+    
+
+            <center>
+                <input type="number" placeholder="First value" id="first">
+                <input type="number" placeholder="Second value" id="second"><br><br>
+                <button onclick="Add()">Addition</button>
+                <button onclick="Subs()">Subtraction</button>
+                <button onclick="div()">Division</button>
+                <button onclick="mult()">Multiplication</button>
+            </center>
+            <div id="result"></div>
+    <script>
+        function Add() {
+            var one = first.value
+            var two = second.value
+            console.log(one,two);
+            for(i=1; i<=one; i++) {
+                for(j=1; j<=two; j++) {
+                    console.log(`${i} + ${j} = ${i + j}`);
+                    result.innerHTML += `<p> ${i} + ${j} = ${i + j}</p>`
+                }
+            }
+        }
+        function Subs() {
+            var one = first.value
+            var two = second.value
+            console.log(one,two);
+            for(i=1; i<=one; i++) {
+                for(j=1; j<=two; j++) {
+                    console.log(`${i} - ${j} = ${i-j}`);
+                    result.innerHTML += `<p>${i} - ${j} = ${i-j}</p>`
+                }
+            }
+        }
+
+        function mult() {
+            var one = first.value
+            var two = second.value
+            console.log(one,two);
+            for(i=1; i<=one; i++) {
+                for(j=1; j<=two; j++) {
+                    console.log(`${i} * ${j} = ${i*j}`);
+                    result.innerHTML += `<p>${i} * ${j} = ${i*j}</p>`
+                }
+            }
+        }
+
+
+        function div() {
+            var one = first.value
+            var two = second.value
+            console.log(one,two);
+            for(i=1; i<=one; i++) {
+                for(j=1; j<=two; j++) {
+                    console.log(`${i} / ${j} = ${i/j}`);
+                    result.innerHTML += `<p>${i} / ${j} = ${i/j}</p>`
+                }
+            }
+        }
+    </script>
+    </table>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+    background-image: url(/images/download\ \(6\).jpg);
+}
+input {
+    height: 40px;
+    border-radius: 20px;
+    border:1px solid azure;
+    color: black;
+    background-color: azure;
+}
+
+button{
+    border: 1px solid blue;
+    border-radius: 20px;
+    height: 60px;
+    width: 140px;
+    color: black;
+    font-family: cursive;
+    font-weight: 900;
+    font-size: large;
+    background-color: blue;
+    
+}

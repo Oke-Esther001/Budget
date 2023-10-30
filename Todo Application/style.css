@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    background-image: url(/images/download\ \(8\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.whole-container{
+    margin-top: 150px;
+}
+.Todo{
+    margin-right: 180px;
+    text-align: center;
+    text-decoration: underline;
+    color: teal;
+    font-style: oblique;
+}
+
+.butt{
+    text-align: center;
+    border: 1px solid green;
+    height: 50px;
+    width: 500px;
+    margin: 10px;
+    margin-left: 300px;
+    border-radius: 20px;
+    color: white;
+    background-color: teal;
+}
+
+#showErr{
+    text-align: center;
+    /* font-size: larger; */
+    font-weight: 900;
+    color: red;
+    font-size: 30px;
+    font-style: italic;
+    margin-right: 200px;
+}
+
+#items{
+    border: 1px solid teal;
+    height: 50px;
+    width: 500px;
+    margin: 10px;
+    margin-left: 300px;
+    border-radius: 20px;
+    color: brown;
+}
+
+.start{
+    margin-left: 10px;
+    width: 100px;
+    height: 60px;
+    background-color: teal;
+    border-radius: 25px;
+}
+.bot{
+    margin-left: 200px;
+}
+.start{
+
+}
+@media(max-width:770px){
+    .Todo{
+        margin-right: 100px;
+    }
+    #items{
+        border: 1px solid teal;
+        height: 50px;
+        width: 400px;
+        margin: 10px;
+        margin-left: 150px;
+        border-radius: 20px;
+        color:brown;
+    }
+    .butt{
+        border: 1px solid teal;
+        height: 50px;
+        width: 400px;
+        margin: 10px;
+        margin-left: 150px;
+        border-radius: 20px;
+        color:brown;
+    }
+    .bot{
+        margin-left: 40px;
+    }
+}
+@media(max-width:430px){
+    .Todo{
+        margin-right: 40px;
+    }
+    #items{
+        border: 1px solid teal;
+        height: 50px;
+        width: 300px;
+        margin: 10px;
+        margin-left: 50px;
+        border-radius: 20px;
+        color:brown;
+    }
+    .butt{
+        border: 1px solid teal;
+        height: 50px;
+        width: 300px;
+        margin: 10px;
+        margin-left: 50px;
+        border-radius: 20px;
+        color:brown;
+    }
+    .bot{
+        display: grid;
+        grid-template-columns: repeat(3,2fr);
+        gap: 10px;
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+}
+@media(max-width:380px){
+    .whole-container{
+        margin-top: 100px;
+    }
+    .Todo{
+        margin-right: 20px;
+    }
+    #items{
+        border: 1px solid teal;
+        height: 50px;
+        width: 300px;
+        margin: 10px;
+        margin-left: 35px;
+        border-radius: 20px;
+        color:brown;
+    }
+    .butt{
+        border: 1px solid teal;
+        height: 50px;
+        width: 300px;
+        margin: 10px;
+        margin-left: 35px;
+        border-radius: 20px;
+        color:brown;
+    }
+    .bot{
+        display: grid;
+        grid-template-columns: repeat(3,2fr);
+        gap: 10px;
+        border-radius: 20px;
+        margin-left: 3px;
+    }
+}
+/* @media screen and (max-width: 475px) {
+    #items{
+        border: 1px solid teal;
+        height: 50px;
+        width: 200px;
+        margin: 10px;
+        margin-left: 60px;
+        border-radius: 20px;
+        color:brown;
+    }
+
+    .butt{
+        border: 1px solid teal;
+        height: 50px;
+        width: 200px;
+        margin: 10px;
+        margin-left: 60px;
+        border-radius: 20px;
+        color:brown;
+    }
+
+    .bot{
+        margin-left: 40px;
+        display: flex;
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #items{
+        border: 1px solid teal;
+        height: 50px;
+        width: 250px;
+        margin: 10px;
+        margin-left: 40px;
+        border-radius: 20px;
+        color:brown;
+    }
+
+    .butt{
+        border: 1px solid teal;
+        height: 50px;
+        width: 250px;
+        margin: 10px;
+        margin-left: 40px;
+        border-radius: 20px;
+        color:brown;
+    }
+
+    .bot{
+        margin-left: 40px;
+        display: flex;
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 50px) {
+    #items{
+        border: 1px solid teal;
+        height: 50px;
+        width: 250px;
+        margin: 10px;
+        margin-left: 5px;
+        border-radius: 20px;
+        color:brown;
+    }
+
+    .butt{
+        border: 1px solid teal;
+        height: 50px;
+        width: 250px;
+        margin: 10px;
+        margin-left: 5px;
+        border-radius: 20px;
+        color:brown;
+    }
+
+    .bot{
+        margin-left: 40px;
+        display: flex;
+        gap: 0px;
+    }
+} */

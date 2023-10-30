@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Grading system</h1>
+    <input type="number" placeholder="Enter your score" id="inputValue">
+    <button onclick="checkScore()">Check Score</button>
+    <div id="result"></div>
+
+    <script>
+        function checkScore() {
+            var caleb = document.getElementById("inputValue").value
+    
+                if (caleb == "") {
+                    result.innerHTML = "Enter something"
+                }else if (caleb >= 0 && caleb < 40) {   
+                    result.innerHTML = "Fail"
+                } else if(caleb >= 40 && caleb < 45) {
+                    result.innerHTML = "Pass"
+                } else if(caleb >= 45 && caleb < 50) {
+                    result.innerHTML = "Average"
+                } else if(caleb >= 50 && caleb < 60) {
+                    result.innerHTML = "Credit"
+                } else if(caleb >= 60 && caleb < 70) {
+                    result.innerHTML = "Good"
+                } else if(caleb >= 70 && caleb <=100) {
+                    result.innerHTML = "Excellent"
+                } else {
+                    result.innerHTML = "Invalid"
+                }
+        }
+        
+    </script>
+</body>
+</html>

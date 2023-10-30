@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text" placeholder="Todo Title" id="todoTitle">
+    <input type="text" placeholder="Todo Details" id="todoDetails">
+    <button onclick="submitTodo()">Submit</button>
+    <div id="result"></div>
+    <script>
+        var allTodos = []
+    function submitTodo() {
+        var day = new Date()
+        var time = day.toLocaleTimeString()
+        var date = day.toLocaleDateString()
+        var title = todoTitle.value
+        var details = todoDetails.value
+
+
+        var todoObj = {title, details ,time ,date}
+        result.innerHTML=""
+        todoTitle.value =""
+        todoDetails.value =""
+        allTodos.push(todoObj)
+        allTodos.map((tod, ind)=>{
+            result.innerHTML += `
+            <table>
+                    <tr>
+                        <th>S/N</th>
+                        <th>title</th>
+                        <th>details</th>
+                        <th>time</th>
+                        <th>date</th>
+                    </tr>
+                    <tr>
+                        <td><p>${ind+1}</p></td>
+                        <td><p>${tod.title}</p></td>
+                        <td><p>${tod.details}</p></td>
+                        <td><p>${tod.time}</p></td>
+                        <td><p>${tod.date}</p></td>
+                    </tr>
+            </table>
+            `
+        })
+        console.log(allTodos);
+    }
+    // title : todoTitle.value,
+    // details : todoDetails.value,
+    // time,
+    // date
+
+    var dummy = []
+    </script>
+</body>
+</html>

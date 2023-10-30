@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">FizzBuzz</h1>
+    <input type="text" placeholder="Enter" id="inputValue">
+    <button onclick="check()">check</button>
+    <div id="result"></div>
+
+
+
+    <script>
+        function check() {
+            var number = document.getElementById("inputValue").value;
+
+            
+            if(number%3 == 0 && number%5 == 0) {
+                result.innerHTML = "FizzBuzz"
+            }else if(number%3 == 0) {
+                result.innerHTML = "Fizz"
+            }else if(number%5 == 0) {
+                result.innerHTML = "Buzz"
+            }            
+            }
+    </script>
+</body>
+</html>

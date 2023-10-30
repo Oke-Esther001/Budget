@@ -1,0 +1,82 @@
+body{
+    background-image: url(/images/download\ \(12\).jpg);
+}
+
+.Kenny{
+    text-align: center;
+    text-decoration: underline;
+    color: teal;
+    font-style: oblique;
+}
+
+.butt{
+    text-align: center;
+    border: 1px solid green;
+    height: 50px;
+    width: 500px;
+    margin: 10px;
+    margin-left: 400px;
+    border-radius: 20px;
+    color: white;
+    background-color: teal;
+}
+
+#showErr{
+    text-align: center;
+    /* font-size: larger; */
+    font-weight: 900;
+    color: red;
+    font-size: 30px;
+    font-style: italic;
+}
+
+#items{
+    border: 1px solid teal;
+    height: 50px;
+    width: 500px;
+    margin: 10px;
+    margin-left: 400px;
+    border-radius: 20px;
+    color: brown;
+}
+
+.start{
+    margin-left: 10px;
+    width: 100px;
+    height: 60px;
+    background-color: teal;
+}
+.bot{
+    margin-left: 300px;
+}
+/* .start1{
+    width: 50px;
+    height: 60px;
+    background-color: teal;
+}
+
+
+.start2{
+    width: 50px;
+    height: 60px;
+    background-color: teal;
+}
+
+.start3{
+    width: 50px;
+    height: 60px;
+    background-color: teal;
+}
+
+.start4{
+    width: 50px;
+    height: 60px;
+    background-color: teal;
+}
+
+.start5{
+    width: 50px;
+    height: 60px;
+    background-color: teal;
+} */
+
